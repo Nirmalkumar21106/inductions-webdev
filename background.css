@@ -1,0 +1,31 @@
+.outer {
+    display: grid;
+    grid-template-areas: " a a a a a" "a a a a a " "a a a a a " "a a a a a ";
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    gap: 4px;
+    padding: 4px;
+    justify-content: center;
+}
+
+.middle {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.sample {
+    display: grid;
+    grid-template-areas: "a a a" "a a a" "a a a";
+    gap: 4px;
+    justify-content: center;
+}
+
+.inside {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
