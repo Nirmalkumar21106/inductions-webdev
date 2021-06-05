@@ -1,11 +1,17 @@
+body {
+    background-color: black;
+}
+
 .outer {
     display: grid;
-    grid-template-areas: " a a a a a" "a a a a a " "a a a a a " "a a a a a ";
     grid-template-columns: 60px 60px 60px 60px 60px;
     grid-template-rows: 60px 60px 60px 60px 60px;
-    gap: 4px;
+    gap: 6px;
     padding: 4px;
     justify-content: center;
+    height: 90vh;
+    margin: 0px;
+    grid-area: auto;
 }
 
 .middle {
