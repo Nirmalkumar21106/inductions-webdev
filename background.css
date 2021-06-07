@@ -2,6 +2,12 @@ body {
     background-color: black;
 }
 
+.overall {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .outer {
     display: grid;
     grid-template-columns: 60px 60px 60px 60px 60px;
@@ -9,9 +15,8 @@ body {
     gap: 6px;
     padding: 4px;
     justify-content: center;
-    height: 90vh;
-    margin: 0px;
-    grid-area: auto;
+    width: fit-content;
+    background-color: rgb(117, 112, 112);
 }
 
 .middle {
@@ -29,9 +34,69 @@ body {
 }
 
 .inside {
-    display: inline-block;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 10px solid rgb(17, 190, 31);
+    width: 40%;
+    text-align: center;
+}
+
+.timer {
+    color: rgb(0, 0, 0);
+    background-color: #fefefe;
+    text-align: center;
+    width: 50%;
+    border-style: dashed solid;
+    height: 50px;
+    font-size: larger;
+}
+
+#reset {
+    font-size: larger;
+}
+
+.sideways {
+    display: grid;
+    justify-content: end;
+}
+
+.congrats {
+    font-size: x-large;
+    color: green;
+}
+
+#points {
+    font-size: large;
+    color: blue;
+}
+
+#mdis {
+    font-size: large;
+    color: blue;
+}
+
+#sdis {
+    font-size: large;
+    color: blue;
 }

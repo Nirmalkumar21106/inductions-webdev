@@ -8,7 +8,7 @@
 
 <body id="unknown">
 
-    <div class="sample" id="comeon">
+    <div class="sample">
         <div class="inside" id="1x1"></div>
         <div class="inside" id="1x2"></div>
         <div class="inside" id="1x3"></div>
@@ -20,36 +20,49 @@
         <div class="inside" id="3x3"></div>
     </div>
     <br>
+    <div class="overall">
 
-    <div class="outer">
-        <div class="middle" id="first"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle"></div>
-        <div class="middle" id="emptysquare"></div>
+        <div class="outer">
+            <div class="middle" id="first"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle noin"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle"></div>
+            <div class="middle" id="emptysquare"></div>
 
+        </div>
+        <br><br>
+        <div class="timer">time=><br><span id="minutes"></span>:<span id="seconds"></span></div>
     </div>
-
+    <div class="modal" id="mymodal">
+        <div class="modal-content">
+            <p class="congrats"> well done!!</p><br>
+            <p id="notedtime">you took only <span id="mdis"></span> minutes and <span id="sdis"></span> seconds </p>
+            <p>You have scored <span id="points"></span> points !!!</p>
+            <button id="playagain">play again</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="sideways"><button id="reset">Reset</button></div>
     <script src="helper.js"></script>
 </body>
 
