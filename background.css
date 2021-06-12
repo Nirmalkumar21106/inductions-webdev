@@ -10,7 +10,6 @@ body {
 
 .outer {
     display: grid;
-    grid-template-areas: "a a a a a" "a a a a a" "a a a a a""a a a a a" "a a a a a";
     grid-template-columns: 60px 60px 60px 60px 60px;
     grid-template-rows: 60px 60px 60px 60px 60px;
     gap: 6px;

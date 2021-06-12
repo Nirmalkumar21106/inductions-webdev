@@ -129,5 +129,3 @@ function interval() {
         document.getElementById("minutes").innerHTML = minutes
     }, 1000)
 }
-//rgb(138, 135, 135)
-//rgb(54, 54, 54)
