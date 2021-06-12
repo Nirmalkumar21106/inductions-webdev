@@ -1,4 +1,5 @@
 var first = document.querySelectorAll(".inside")
+
 var inner = document.querySelectorAll(".middle")
 var parent = document.querySelector(".outer")
 var i, points
@@ -25,6 +26,8 @@ first.forEach(function(item) {
     item.style.background = colours2[i]
     colours.splice(i, 1)
 })
+inner[24].style.backgroundColor = 'rgb(138, 135, 135)'
+
 
 inner.forEach(function(item) {
 
@@ -35,26 +38,45 @@ inner.forEach(function(item) {
     var j = Array.prototype.indexOf.call(parent.children, item)
 
     function hello() {
-        if (nextelement != null && nextelement.style.backgroundColor == '' && j % 5 != 4) {
+        if (nextelement != null && (nextelement.style.backgroundColor == 'rgb(138, 135, 135)' || nextelement.style.backgroundColor == 'rgb(54, 54, 54)') && j % 5 != 4) {
             nextelement.style.backgroundColor = item.style.backgroundColor
-            item.style.backgroundColor = ''
+            if (j % 5 != 0 && 5 < j && j < 19) {
+                item.style.backgroundColor = 'rgb(54, 54, 54)'
+            } else {
+
+                item.style.backgroundColor = 'rgb(138, 135, 135)'
+            }
             totalmoves = totalmoves + 1
+
         }
-        if (previouselement != null && previouselement.style.backgroundColor == '' && j % 5 != 0) {
+        if (previouselement != null && (previouselement.style.backgroundColor == 'rgb(138, 135, 135)' || previouselement.style.backgroundColor == 'rgb(54, 54, 54)') && j % 5 != 0) {
             previouselement.style.backgroundColor = item.style.backgroundColor
-            item.style.backgroundColor = ''
+            if (j % 5 != 4 && 5 < j && j < 19) {
+                item.style.backgroundColor = 'rgb(54, 54, 54)'
+            } else {
+                item.style.backgroundColor = 'rgb(138, 135, 135)'
+            }
             totalmoves = totalmoves + 1
         }
 
-        if (inner[j - 5] != null && inner[j - 5].style.backgroundColor == '') {
+        if (inner[j - 5] != null && (inner[j - 5].style.backgroundColor == 'rgb(138, 135, 135)' || inner[j - 5].style.backgroundColor == 'rgb(54, 54, 54)')) {
             inner[j - 5].style.backgroundColor = inner[j].style.backgroundColor
-            inner[j].style.backgroundColor = ''
+            if (j % 5 != 0 && j % 5 != 4 && 5 < j && j < 19) {
+                inner[j].style.backgroundColor = 'rgb(54, 54, 54)'
+            } else {
+                inner[j].style.backgroundColor = 'rgb(138, 135, 135)'
+            }
             totalmoves = totalmoves + 1
         }
-        if (inner[j + 5] != null && inner[j + 5].style.backgroundColor == '') {
+        if (inner[j + 5] != null && (inner[j + 5].style.backgroundColor == 'rgb(138, 135, 135)' || inner[j + 5].style.backgroundColor == 'rgb(54, 54, 54)')) {
             inner[j + 5].style.backgroundColor = inner[j].style.backgroundColor
-            inner[j].style.backgroundColor = ''
+            if (j % 5 != 0 && j % 5 != 4 && 5 < j && j < 19) {
+                inner[j].style.backgroundColor = 'rgb(54, 54, 54)'
+            } else {
+                inner[j].style.backgroundColor = 'rgb(138, 135, 135)'
+            }
             totalmoves = totalmoves + 1
+
         }
         if (totalmoves == 1) {
             interval()
@@ -107,3 +129,5 @@ function interval() {
         document.getElementById("minutes").innerHTML = minutes
     }, 1000)
 }
+//rgb(138, 135, 135)
+//rgb(54, 54, 54)

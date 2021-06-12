@@ -10,20 +10,25 @@ body {
 
 .outer {
     display: grid;
+    grid-template-areas: "a a a a a" "a a a a a" "a a a a a""a a a a a" "a a a a a";
     grid-template-columns: 60px 60px 60px 60px 60px;
     grid-template-rows: 60px 60px 60px 60px 60px;
     gap: 6px;
-    padding: 4px;
+    padding: 10px;
     justify-content: center;
     width: fit-content;
-    background-color: rgb(117, 112, 112);
+    background-color: rgb(125 125 125);
+    border-radius: 10px;
 }
 
 .middle {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
+}
+
+.noin {
+    outline: 6px solid rgb(49 48 48)
 }
 
 .sample {
@@ -38,6 +43,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
+    border-radius: 6px;
 }
 
 .modal {
@@ -63,18 +69,20 @@ body {
 }
 
 .timer {
-    color: rgb(0, 0, 0);
-    background-color: #fefefe;
+    color: rgb(0 0 0);
+    background-color: #989595;
     text-align: center;
     width: 50%;
-    border-style: dashed solid;
     height: 50px;
     font-size: larger;
+    border: 7px double #232222;
+    border-radius: 56px
 }
 
 #reset {
     font-size: larger;
-    background-color: rgb(173, 123, 61);
+    background-color: rgb(70 74 43);
+    color: white;
 }
 
 .sideways {
@@ -100,53 +108,4 @@ body {
 #sdis {
     font-size: large;
     color: blue;
-}
-
-.vl {
-    border-left: 6px solid #1c1c2b;
-    height: 205;
-    position: absolute;
-    bottom: 24.5%;
-    margin-left: 96px;
-    margin-bottom: 67px;
-}
-
-.zero {
-    left: 50%;
-}
-
-.one {
-    left: 45.18%;
-}
-
-.two {
-    left: 40.32%;
-}
-
-.three {
-    left: 35.47%;
-}
-
-.hl {
-    border-bottom: 6px solid #1c1c2b;
-    width: 205;
-    position: absolute;
-    margin-left: 41.92%;
-    margin-bottom: 67px;
-}
-
-.lo {
-    bottom: 24.7%
-}
-
-.lt {
-    bottom: 34.7%
-}
-
-.lth {
-    bottom: 44.7%
-}
-
-.lf {
-    bottom: 54.8%
 }
