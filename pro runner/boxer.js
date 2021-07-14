@@ -20,6 +20,7 @@ var total_interval = 752,
     highest_score = 0
 var c = document.getElementById("points")
 var d = document.getElementById("score")
+d.innerHTML = localStorage.getItem(highest_score)
 
 
 
